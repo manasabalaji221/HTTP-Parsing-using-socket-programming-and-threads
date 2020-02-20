@@ -1,0 +1,11 @@
+This project can run 3 different clients which can be handled by a server.
+To run the project, first the server is to be run and then each of the clients.
+Each client opens up as a GUI where one can select options like “send username to server”, 
+“Generate random number and send server” and “log out".
+Client is connected with Client using socket and it sends its username to the server using the username entered by the user.
+A client can also generate a random number between 5 to 15 and send that to the server.
+Then the server waits for those many random number of seconds.
+In server side, the thread is made to sleep for that many seconds.
+The clients and server send its messages in HTTP Post formats.
+Additionally, it can also log out from the connection with the server and thus the server closes this socket.
+After successful connection with each client, the server updates the username in its GUI.
